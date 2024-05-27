@@ -206,3 +206,109 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.table {
+    border: 10px #ccc;
+    background-color: #a8945b;
+    color: #000f;
+    border-radius: 10px;
+    font-size: 20px
+}
+
+.product {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #a8945b;
+    margin-right: 1109px;
+    margin-bottom: 20px;
+    color: #000f;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.product2 {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #635734;
+    margin-right: 1100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.product3 {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #635734;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.login {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #a8945b;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 210px;
+    color: #000f;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.signup {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #a8945b;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 210px;
+    color: #000f;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.text-boxLogin {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #a8945b;
+    margin-left: 569px;
+    margin-bottom: 185px;
+    border-radius: 10px;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-boxSignUp {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #a8945b;
+    margin-left: 535px;
+    margin-bottom: 185px;
+    border-radius: 10px;
+    width: 210px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-boxOrder {
+    border: 10px #ccc;
+    padding: 10px;
+    background-color: #a8945b;
+    margin-left: 480px;
+    margin-bottom: 155px;
+    border-radius: 10px;
+    width: 334px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.OrderTable {
+    margin-bottom: 155px
+}

@@ -1,5 +1,9 @@
-﻿@{
+﻿@model int  // We only need to pass userID to this view
+
+@{
     ViewData["Title"] = "Home Page";
+    var UserID = ViewData["UserID"];
+    var Products = ViewData["Products"] as List<KhumaloCraftWebApp.Models.ProductTable>;
 }
 
 <div class="text-center">
@@ -18,3 +22,54 @@
     <br />
     <br />
 </div>
+
+
+@if (UserID != null)
+{
+    <p class="product2">Welcome User No. @UserID
+        Please enjoy the products we have available :D
+    </p>
+}
+
+<h2 class="product">All Products</h2>
+
+<table class="table table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Availability</th>
+            <th>Checkout</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Products != null)
+        {
+            foreach (var Product in Products)
+            {
+                <tr>
+                    <td>@Product.Item</td>
+                    <td>@Product.Description</td>
+                    <td>@Product.Price</td>
+                    <td>@Product.Category</td>
+                    <td>@Product.Availability</td>
+                    <td>
+                        <form asp-controller="Transaction" asp-action="PlaceOrder" method="post">
+                            <input type="hidden" name="UserID" value="@UserID" />
+                            <input type="hidden" name="ProductID" value="@Product.ProductID" />
+                            <button type="submit">Place Order</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6">No products available.</td>
+            </tr>
+        }
+    </tbody>
+</table>

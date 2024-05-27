@@ -1,0 +1,30 @@
+﻿@model KhumaloCraftWebApp.Models.UserTable
+@{
+
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4 text-boxLogin">Login</h1>
+</div>
+
+<body>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <form asp-controller="Login" asp-action="Login" method="post" class="login">
+        <p>If you don't have an account, <a href="https://localhost:7175/Home/SignUp">Sign Up</a> for a new account.</p>
+        <p>Please fill in your login details below:</p>
+        <input type="text" name="Name" placeholder="Bob" required>
+        <input type="text" name="Surname" placeholder="Marley" required>
+        <input type="text" name="Email" placeholder="example@gmail.com" required>
+        <input type="text" name="Password" placeholder="AwesomeSau31!" required>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
