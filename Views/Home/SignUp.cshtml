@@ -1,0 +1,19 @@
+﻿@model KhumaloCraftWebApp.Models.UserTable
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<h1 class="display-4 text-boxSignUp">Sign Up</h1>
+
+<body>
+    <form action="/User/AboutUs" method="post" class="signup">
+        <p>you need to sign up in the website for the application.</p>
+        <p>Please fill in the follow details to register:</p>
+        <input type="text" name="Name" placeholder="Bob" required>
+        <input type="text" name="Surname" placeholder="Marley" required>
+        <input type="text" name="Email" placeholder="example@gmail.com" required>
+        <input type="text" name="Password" placeholder="AwesomeSau31!" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
